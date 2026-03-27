@@ -58,7 +58,6 @@ html {
     color: #545050;
 }
 
-/*теймпл контент видео карточка*/
 .content__list {
     display: flex;
     flex-direction: column;
@@ -82,15 +81,15 @@ html {
     flex-grow: 1;
 }
 
-.content__video-card-title { 
-    margin-bottom: 6px; 
-    line-height: 100%; 
-    text-transform: uppercase; 
-    font-family: 'Oswald', sans-serif; 
-    font-style: normal; 
-    font-weight: 700; 
-    font-size: 30px; 
-    color: #FFFFFF; 
+.content__video-card-title {
+    margin-bottom: 6px;
+    line-height: 100%;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: #FFFFFF;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -174,7 +173,6 @@ ol {
     list-style: none;
 }
 
-/* Кастомный скроллбар */
 .custom-scrollbar::-webkit-scrollbar {
     width: 4px;
 }
@@ -211,7 +209,6 @@ ol {
 
 .search-form__fieldset {
     border: 0;
-
 }
 
 .search-form__label {
