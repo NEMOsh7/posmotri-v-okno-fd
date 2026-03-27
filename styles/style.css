@@ -45,7 +45,7 @@ html {
 
 .title {
     margin-bottom: 26px;
-    line-height: 94%;
+    line-height: 0.94;
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
     font-style: normal;
@@ -74,7 +74,7 @@ html {
 .content__video-card-thumbnail {
     min-width: 194px;
     object-fit: cover;
-    object-position: right;
+    object-position: center;
     height: 103px;
 }
 
@@ -82,23 +82,21 @@ html {
     flex-grow: 1;
 }
 
-.content__video-card-title {
-    margin-bottom: 6px;
-    line-height: 100%;
-    text-transform: uppercase;
-    text-overflow: ellipsis;
-    font-family: 'Oswald', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    color: #FFFFFF;
-    line-clamp: 1;
-    white-space: nowrap;
-    overflow: hidden;
-    max-width: 711px;
+.content__video-card-title { 
+    margin-bottom: 6px; 
+    line-height: 100%; 
+    text-transform: uppercase; 
+    font-family: 'Oswald', sans-serif; 
+    font-style: normal; 
+    font-weight: 700; 
+    font-size: 30px; 
+    color: #FFFFFF; 
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+    overflow: hidden;
+    max-width: 711px;
+    width: 100%;
 }
 
 .content__video-card-description {
@@ -139,7 +137,7 @@ html {
 }
 
 .content__card-link:focus-visible {
-    outline: 2px solid #FFFFFF;
+    outline: 1px solid #FFFFFF;
 }
 
 .content__list-item {
@@ -222,6 +220,7 @@ ol {
     align-items: center;
     width: fit-content;
     gap: 5px;
+    cursor: pointer;
 }
 
 .search-form__text-input {
@@ -243,13 +242,9 @@ ol {
     line-height: 22px;
 }
 
-.search-form__label :focus {
+.search-form__text-input:focus {
     outline: none;
-}
-
-.search-form__label:has(:focus-visible) {
-    outline: 2px solid #FFFFFF;
-    outline-offset: 2px;
+    border-color: #FFFFFF;
 }
 
 .search-form__label::placeholder {
@@ -282,8 +277,6 @@ ol {
 
 .button {
     border: 1px solid #FFFFFF;
-    line-height: 34px;
-    text-align: center;
     background-color: transparent;
     font-family: 'Fira Sans Condensed', sans-serif;
     font-style: normal;
@@ -291,6 +284,9 @@ ol {
     font-size: 18px;
     color: #FFFFFF;
     height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .search-form__submit-button {
@@ -299,7 +295,7 @@ ol {
 }
 
 .more-button {
-    width: 100%;
+    width: 50%;
 }
 
 .button:focus {
@@ -315,7 +311,7 @@ ol {
 }
 
 .button:focus-visible {
-    outline: 2px solid #FFFFFF;
+    outline: 1px solid #FFFFFF;
     outline-offset: 2px;
 }
 
