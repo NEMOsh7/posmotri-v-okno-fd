@@ -100,7 +100,6 @@ html {
     white-space: nowrap;
     overflow: hidden;
     max-width: 196px;
-    display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
 }
@@ -209,6 +208,7 @@ ol {
     font-weight: 400;
     font-size: 17px;
     color: #FFFFFF;
+    margin-bottom: 5px;
 }
 
 .search-form__checkbox-list {
@@ -229,11 +229,10 @@ ol {
     width: fit-content;
     gap: 5px;
     cursor: pointer;
-
 }
 
 .search-form__text-input {
-    margin-top: 5px;
+    margin-top: 0px;
     padding: 0px;
     gap: 10px;
     width: 225px;
@@ -314,7 +313,9 @@ ol {
 }
 
 .more-button {
-    width: 100%;
+    width: calc(100% - 4px);
+    margin-left: 1px;
+    margin-right: 3px;
 }
 
 .button:focus {
@@ -343,3 +344,4 @@ ol {
     clip-path: inset(50%);
     white-space: nowrap;
 }
+
